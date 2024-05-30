@@ -1,0 +1,7 @@
+C:\Users\top\OneDrive\Документы\Malahov SASA\proekt\x64\Debug\proekt.vcxproj.AssemblyReference.cache
+C:\Users\top\OneDrive\Документы\Malahov SASA\proekt\x64\Debug\proekt.vcxproj.SuggestedBindingRedirects.cache
+C:\Users\top\OneDrive\Документы\Malahov SASA\proekt\x64\Debug\proekt.MyForm.resources
+C:\Users\top\OneDrive\Документы\Malahov SASA\proekt\x64\Debug\proekt.vcxproj.GenerateResource.cache
+C:\Users\top\OneDrive\Документы\Malahov SASA\proekt\x64\Debug\proekt.exe
+C:\Users\top\OneDrive\Документы\Malahov SASA\proekt\x64\Debug\proekt.Add.resources
+C:\Users\top\OneDrive\Документы\Malahov SASA\proekt\x64\Debug\proekt.Add3.resources
