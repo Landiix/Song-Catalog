@@ -24,7 +24,6 @@ namespace proekt {
 			InitializeComponent();
 		}
 
-
 	protected:
 		~Add()
 		{
