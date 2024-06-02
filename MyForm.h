@@ -5,9 +5,7 @@
 #include "Add3.h"
 #include <fstream>
 
-
 namespace proekt {
-
 	using namespace System;
 	using namespace System::ComponentModel;
 	using namespace System::Collections;
@@ -16,30 +14,15 @@ namespace proekt {
 	using namespace System::Drawing;
 	using namespace std;
 
-
-	
-	
-	
-
-
-	/// <summary>
-	/// Сводка для MyForm
-	/// </summary>
 	public ref class MyForm : public System::Windows::Forms::Form
 	{
 	public:
 		MyForm(void)
 		{
 			InitializeComponent();
-			//
-			//TODO: добавьте код конструктора
-			//
 		}
 
 	protected:
-		/// <summary>
-		/// Освободить все используемые ресурсы.
-		/// </summary>
 		~MyForm()
 		{
 			if (components)
@@ -54,16 +37,10 @@ namespace proekt {
 	private: System::Windows::Forms::Button^ button3;
 
 	private:
-		/// <summary>
-		/// Обязательная переменная конструктора.
-		/// </summary>
 		System::ComponentModel::Container ^components;
 
 #pragma region Windows Form Designer generated code
-		/// <summary>
-		/// Требуемый метод для поддержки конструктора — не изменяйте 
-		/// содержимое этого метода с помощью редактора кода.
-		/// </summary>
+
 		void InitializeComponent(void)
 		{
 			this->label1 = (gcnew System::Windows::Forms::Label());
@@ -81,7 +58,7 @@ namespace proekt {
 			this->label1->Name = L"label1";
 			this->label1->Size = System::Drawing::Size(239, 24);
 			this->label1->TabIndex = 0;
-			this->label1->Text = L"Каталог текстов песен";
+			this->label1->Text = L"ГЉГ ГІГ Г«Г®ГЈ ГІГҐГЄГ±ГІГ®Гў ГЇГҐГ±ГҐГ­";
 			this->label1->TextAlign = System::Drawing::ContentAlignment::TopCenter;
 			// 
 			// button1
@@ -94,7 +71,7 @@ namespace proekt {
 			this->button1->Name = L"button1";
 			this->button1->Size = System::Drawing::Size(330, 41);
 			this->button1->TabIndex = 1;
-			this->button1->Text = L"Добавить первую песню";
+			this->button1->Text = L"Г„Г®ГЎГ ГўГЁГІГј ГЇГҐГ°ГўГіГѕ ГЇГҐГ±Г­Гѕ";
 			this->button1->UseVisualStyleBackColor = false;
 			this->button1->Click += gcnew System::EventHandler(this, &MyForm::button1_Click);
 			// 
@@ -108,7 +85,7 @@ namespace proekt {
 			this->button2->Name = L"button2";
 			this->button2->Size = System::Drawing::Size(330, 41);
 			this->button2->TabIndex = 2;
-			this->button2->Text = L"Добавить вторую песню";
+			this->button2->Text = L"Г„Г®ГЎГ ГўГЁГІГј ГўГІГ®Г°ГіГѕ ГЇГҐГ±Г­Гѕ";
 			this->button2->UseVisualStyleBackColor = false;
 			this->button2->Click += gcnew System::EventHandler(this, &MyForm::button2_Click);
 			// 
@@ -122,7 +99,7 @@ namespace proekt {
 			this->button3->Name = L"button3";
 			this->button3->Size = System::Drawing::Size(330, 41);
 			this->button3->TabIndex = 3;
-			this->button3->Text = L"Добавить третью песню";
+			this->button3->Text = L"Г„Г®ГЎГ ГўГЁГІГј ГІГ°ГҐГІГјГѕ ГЇГҐГ±Г­Гѕ";
 			this->button3->UseVisualStyleBackColor = false;
 			this->button3->Click += gcnew System::EventHandler(this, &MyForm::button3_Click);
 			// 
@@ -144,7 +121,6 @@ namespace proekt {
 			this->Load += gcnew System::EventHandler(this, &MyForm::MyForm_Load);
 			this->ResumeLayout(false);
 			this->PerformLayout();
-
 		}
 #pragma endregion
 	private: System::Void MyForm_Load(System::Object^ sender, System::EventArgs^ e) {
