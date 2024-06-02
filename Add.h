@@ -2,18 +2,12 @@
 #include "Add.h"
 #include <string.h>
 #include <iostream>
-
-
 #include <string>
 #include <fstream>
 
-
-
 using System::Runtime::InteropServices::Marshal;
 
-
 namespace proekt {
-
 	using namespace System;
 	using namespace System::ComponentModel;
 	using namespace System::Collections;
@@ -22,30 +16,16 @@ namespace proekt {
 	using namespace System::Drawing;
 	using namespace std;
 
-	
-	
-
-	
-
-	/// <summary>
-	/// Сводка для Add
-	/// </summary>
 	public ref class Add : public System::Windows::Forms::Form
 	{
 	public:
 		Add(void)
 		{
 			InitializeComponent();
-			//
-			//TODO: добавьте код конструктора
-			//
 		}
 
 
 	protected:
-		/// <summary>
-		/// Освободить все используемые ресурсы.
-		/// </summary>
 		~Add()
 		{
 			if (components)
@@ -56,29 +36,14 @@ namespace proekt {
 	private: System::Windows::Forms::Label^ label1;
 	private: System::Windows::Forms::TextBox^ Song1_name;
 	private: System::Windows::Forms::TextBox^ Song1_text;
-
-
-
 	private: System::Windows::Forms::TextBox^ Song1_author;
 	private: System::Windows::Forms::Button^ Save1;
 
-
-
-
 	protected:
-
 	private:
-		
-		/// <summary>
-		/// Обязательная переменная конструктора.
-		/// </summary>
 		System::ComponentModel::Container ^components;
 
 #pragma region Windows Form Designer generated code
-		/// <summary>
-		/// Требуемый метод для поддержки конструктора — не изменяйте 
-		/// содержимое этого метода с помощью редактора кода.
-		/// </summary>
 		void InitializeComponent(void)
 		{
 			this->label1 = (gcnew System::Windows::Forms::Label());
@@ -98,7 +63,7 @@ namespace proekt {
 			this->label1->Name = L"label1";
 			this->label1->Size = System::Drawing::Size(230, 25);
 			this->label1->TabIndex = 0;
-			this->label1->Text = L"Заполните все поля";
+			this->label1->Text = L"Г‡Г ГЇГ®Г«Г­ГЁГІГҐ ГўГ±ГҐ ГЇГ®Г«Гї";
 			this->label1->Click += gcnew System::EventHandler(this, &Add::label1_Click);
 			// 
 			// Song1_name
@@ -108,7 +73,7 @@ namespace proekt {
 			this->Song1_name->Name = L"Song1_name";
 			this->Song1_name->Size = System::Drawing::Size(162, 20);
 			this->Song1_name->TabIndex = 1;
-			this->Song1_name->Text = L"имя";
+			this->Song1_name->Text = L"ГЁГ¬Гї";
 			this->Song1_name->TextChanged += gcnew System::EventHandler(this, &Add::textBox1_TextChanged);
 			// 
 			// Song1_text
@@ -120,7 +85,7 @@ namespace proekt {
 			this->Song1_text->ScrollBars = System::Windows::Forms::ScrollBars::Vertical;
 			this->Song1_text->Size = System::Drawing::Size(334, 287);
 			this->Song1_text->TabIndex = 2;
-			this->Song1_text->Text = L"текст";
+			this->Song1_text->Text = L"ГІГҐГЄГ±ГІ";
 			// 
 			// Song1_author
 			// 
@@ -129,7 +94,7 @@ namespace proekt {
 			this->Song1_author->Name = L"Song1_author";
 			this->Song1_author->Size = System::Drawing::Size(165, 20);
 			this->Song1_author->TabIndex = 3;
-			this->Song1_author->Text = L"автор";
+			this->Song1_author->Text = L"Г ГўГІГ®Г°";
 			this->Song1_author->TextChanged += gcnew System::EventHandler(this, &Add::Song1_author_TextChanged);
 			// 
 			// Save1
@@ -141,7 +106,7 @@ namespace proekt {
 			this->Save1->Name = L"Save1";
 			this->Save1->Size = System::Drawing::Size(334, 51);
 			this->Save1->TabIndex = 4;
-			this->Save1->Text = L"Сохранить ";
+			this->Save1->Text = L"Г‘Г®ГµГ°Г Г­ГЁГІГј ";
 			this->Save1->UseVisualStyleBackColor = false;
 			this->Save1->Click += gcnew System::EventHandler(this, &Add::Save1_Click);
 			// 
@@ -164,23 +129,17 @@ namespace proekt {
 			LoadSettings();
 		}
 #pragma endregion
-		
-
 	private: System::Void label1_Click(System::Object^ sender, System::EventArgs^ e) {
 	}
 	private: System::Void textBox1_TextChanged(System::Object^ sender, System::EventArgs^ e) {
-
 	}
 private: System::Void Song1_author_TextChanged(System::Object^ sender, System::EventArgs^ e) {
 }
 private: System::Void Save1_Click(System::Object^ sender, System::EventArgs^ e) {
-	
 	ofstream song1("song1.txt");
 	song1 << toStandardString(Song1_name->Text) << endl << toStandardString(Song1_author->Text) << endl << toStandardString(Song1_text->Text);
 	song1.close();
 }
-
-
 	   private: void LoadSettings() {
 		   string a1, a2, a3,a0;
 		   ifstream song1("song1.txt");
@@ -191,16 +150,10 @@ private: System::Void Save1_Click(System::Object^ sender, System::EventArgs^ e) 
 			   a3 += a0;
 			   a3 += "\n";
 		   }
-
 		   Song1_name->Text = gcnew System::String(a1.c_str());       
 		   Song1_author->Text = gcnew System::String(a2.c_str());   
 		   Song1_text->Text = gcnew System::String(a3.c_str());  
-		   
-		   
 	   }
-
-			 
-
 
 			  static std::string toStandardString(System::String^ string)
 			  {
@@ -212,11 +165,6 @@ private: System::Void Save1_Click(System::Object^ sender, System::EventArgs^ e) 
 				  return returnString;
 			  }
 private: System::Void button1_Click_1(System::Object^ sender, System::EventArgs^ e) {
-
-	/*ifstream song1("song1.txt");
-	getline(song1, song.name);*/
-
-
 
 }
 };
